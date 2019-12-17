@@ -32,72 +32,72 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
-ClassicEditor.builtinPlugins = [
-	Essentials,
-	UploadAdapter,
-	Autoformat,
-	Bold,
-	Italic,
-	BlockQuote,
-	CKFinder,
-	EasyImage,
-	Heading,
-	Image,
-	ImageCaption,
-	ImageStyle,
-	ImageToolbar,
-	ImageUpload,
-	Indent,
-	Link,
-	List,
-	MediaEmbed,
-	Paragraph,
-	PasteFromOffice,
-	Table,
-	TableToolbar
-];
+// ClassicEditor.builtinPlugins = [
+// 	Essentials,
+// 	UploadAdapter,
+// 	Autoformat,
+// 	Bold,
+// 	Italic,
+// 	BlockQuote,
+// 	CKFinder,
+// 	EasyImage,
+// 	Heading,
+// 	Image,
+// 	ImageCaption,
+// 	ImageStyle,
+// 	ImageToolbar,
+// 	ImageUpload,
+// 	Indent,
+// 	Link,
+// 	List,
+// 	MediaEmbed,
+// 	Paragraph,
+// 	PasteFromOffice,
+// 	Table,
+// 	TableToolbar
+// ];
 
-// Editor configuration.
-ClassicEditor.defaultConfig = {
-	toolbar: {
-		items: [
-			'heading',
-			'|',
-			'bold',
-			'italic',
-			'link',
-			'bulletedList',
-			'numberedList',
-			'|',
-			'indent',
-			'outdent',
-			'|',
-			'imageUpload',
-			'blockQuote',
-			'insertTable',
-			'mediaEmbed',
-			'undo',
-			'redo'
-		]
-	},
-	image: {
-		toolbar: [
-			'imageStyle:full',
-			'imageStyle:side',
-			'|',
-			'imageTextAlternative'
-		]
-	},
-	table: {
-		contentToolbar: [
-			'tableColumn',
-			'tableRow',
-			'mergeTableCells'
-		]
-	},
-	// This value must be kept in sync with the language defined in webpack.config.js.
-	language: 'en',
-};
+// // Editor configuration.
+// ClassicEditor.defaultConfig = {
+// 	toolbar: {
+// 		items: [
+// 			'heading',
+// 			'|',
+// 			'bold',
+// 			'italic',
+// 			'link',
+// 			'bulletedList',
+// 			'numberedList',
+// 			'|',
+// 			'indent',
+// 			'outdent',
+// 			'|',
+// 			'imageUpload',
+// 			'blockQuote',
+// 			'insertTable',
+// 			'mediaEmbed',
+// 			'undo',
+// 			'redo'
+// 		]
+// 	},
+// 	image: {
+// 		toolbar: [
+// 			'imageStyle:full',
+// 			'imageStyle:side',
+// 			'|',
+// 			'imageTextAlternative'
+// 		]
+// 	},
+// 	table: {
+// 		contentToolbar: [
+// 			'tableColumn',
+// 			'tableRow',
+// 			'mergeTableCells'
+// 		]
+// 	},
+// 	// This value must be kept in sync with the language defined in webpack.config.js.
+// 	language: 'en',
+// };
 
 ClassicEditor
     .create( document.querySelector( '#editor' ), {
