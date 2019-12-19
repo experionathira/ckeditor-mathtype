@@ -22,6 +22,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import MathType from '@wiris/mathtype-ckeditor5';
+import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -86,6 +87,11 @@ ClassicEditor.defaultConfig = {
 			'mergeTableCells'
 		]
 	},
+	cloudServices: {
+		tokenUrl: '// https://46920.cke-cs.com/token/dev/zt2JYWdiOhgAkiMh8oP3mQTsNlVa7LAqOV2EvNthAPWmc4rirpuU1fy5VJul',
+		uploadUrl: 'https://46920.cke-cs.com/easyimage/upload/'
+	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en'
+	
 };
