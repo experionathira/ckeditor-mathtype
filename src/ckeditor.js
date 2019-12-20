@@ -23,6 +23,7 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import MathType from '@wiris/mathtype-ckeditor5';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
+import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -49,7 +50,8 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	MathType
+	MathType,
+	SimpleUploadAdapter
 ];
 
 // Editor configuration.
@@ -92,6 +94,6 @@ ClassicEditor.defaultConfig = {
 		uploadUrl: 'https://46920.cke-cs.com/easyimage/upload/'
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
-	language: 'en'
+	language: 'en',
 	
 };

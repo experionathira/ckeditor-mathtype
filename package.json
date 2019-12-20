@@ -95,6 +95,7 @@
     }
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-upload": "^16.0.0",
     "@wiris/mathtype-ckeditor5": "^7.17.1"
   }
 }
